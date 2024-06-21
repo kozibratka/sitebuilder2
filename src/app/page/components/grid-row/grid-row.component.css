@@ -1,0 +1,94 @@
+:host.row:hover, :host.row:not(:has(.cell-item)) {
+  outline:  dotted 0 transparent;
+  transition: outline 0.3s linear;
+  outline-width: 1px;
+  outline-color: black;
+}
+
+:host:has(.move-icon-row-container:hover) {
+  outline:  solid 0 transparent;
+  transition: none;
+  outline-color: red !important;
+  outline-width: 2px !important;
+  box-shadow: 0 0 0 4px #3498db;
+}
+
+:host.row:not(:has(.cell-item)) {
+  min-height: 100px;
+  outline-width: 1px;
+  outline-color: black;
+}
+
+/*:host.row {*/
+/*  margin-bottom: 1rem;*/
+/*}*/
+
+:host.row:hover ::ng-deep .delimiter-line {
+  border-right: 1px dotted black;
+  width: 0.5px;
+
+  margin: 0 auto;
+  height: 100%;
+}
+
+app-grid-cell {
+  position: relative;
+}
+
+:host.row {
+  min-height: 20px;
+}
+
+.frameCover div.btn {
+  background-color: #262b33;
+  border-radius: 0;
+  border: 1px solid #d6d6d6;
+  font-size: 12px;
+  height: 25px;
+  margin-right: 1px;
+  outline: 1px solid #000000;
+  position: relative;
+  top: 1px;
+  width: 25px;
+  padding: 0;
+}
+
+.frameCover div.btn i {
+  color: white;
+  display: block;
+  font-size: 18px;
+  position: relative !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row-menu {
+  width: 153px;
+  position: absolute;
+  top: -27px;
+  right: -12px;
+  z-index: 1;
+  text-align: right;
+}
+
+.move-icon-row-container {
+  position: absolute;
+}
+
+.menu-row {
+  width: auto !important;
+  padding: 3px !important;
+  color: white;
+}
+
+.no-vertical-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+::ng-deep .plugin-dragged app-grid-cell-item:has(.is-row),  ::ng-deep .menu-plugin-dragged app-grid-cell-item:has(.is-row){
+  padding: 10px 0;
+}
+
+

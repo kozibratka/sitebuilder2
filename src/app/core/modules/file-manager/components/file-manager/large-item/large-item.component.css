@@ -1,0 +1,113 @@
+.card-box {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.file-man-box {
+  padding: 1px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 7px
+}
+
+.file-man-box .file-close {
+  color: #f1556c;
+  position: absolute;
+  line-height: 24px;
+  font-size: 24px;
+  right: 10px;
+  top: 10px;
+  visibility: hidden
+}
+
+.file-man-box .file-img-box {
+  height: 75px;
+  text-align: center
+}
+
+.file-man-box .file-img-box img {
+  height: 64px
+}
+
+.file-man-box .file-download {
+  font-size: 32px;
+  color: #98a6ad;
+  position: absolute;
+  right: 10px
+}
+
+.file-man-box .file-download:hover {
+  color: #313a46
+}
+
+.file-man-box .file-man-title {
+  padding-right: 0px;
+  text-align: center;
+}
+
+.file-man-box:hover {
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02)
+}
+
+.file-man-box:hover .file-close {
+  visibility: visible
+}
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+h5 {
+  font-size: 15px;
+}
+
+.folder {
+  margin-right: 7px;
+}
+
+.header-panel {
+  border-bottom-color: #e0e0e0;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none;
+  background: #fafafa;
+  padding: 5px;
+  border-bottom-style: solid;
+  border-width: 0 0 1px;
+}
+
+.container-fluid {
+  border: 1px solid #e0e0e0;
+}
+
+.material-icons {
+  font-size: 3em;
+  width: 100%;
+  vertical-align: text-bottom;
+  cursor: default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+mat-checkbox {
+  position: absolute;
+}
+
+.selected {
+  background: #d3d3d3;
+}
+
+
+
+
+

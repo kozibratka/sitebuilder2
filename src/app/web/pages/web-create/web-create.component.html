@@ -1,0 +1,35 @@
+<div class="card card-primary card-outline">
+  <div class="card-header">
+    <h3 class="card-title">{{title.getTitle()}}</h3>
+  </div> <!-- /.card-body -->
+  <div class="card-body">
+    <form [formGroup]="createWebForm">
+      <app-global-form-error></app-global-form-error>
+      <label for="webName" class="form-label">Název webu</label>
+      <input id="webName" appFormError type="text" class="form-control" placeholder="Název webu" formControlName="name">
+      <ng-container *ngIf="createWebForm.contains('isTemplate')">
+        <div class="form-check">
+          <input class="form-check-input" id="help-text1" type="checkbox" formControlName="isTemplate">
+          <label class="form-check-label" for="help-text1">Web bude sloužit jako šablona</label>
+        </div>
+      </ng-container>
+      <label class="form-label">Doména:</label>
+      <div formArrayName="domains">
+        <div *ngFor="let domain of domains.controls; let i=index" [formGroupName]="i">
+          <input appFormError placeholder="Např: domena.cz" type="text" formControlName="name" class="form-control">
+        </div>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <div class="d-flex justify-content-end">
+          <a [routerLink]="route.snapshot.url[0].path === 'create' ? ['../list'] : ['../../list']" [replaceUrl]="true" mat-button>Zpět na seznam webů</a>
+          <button type="submit" mat-raised-button color="primary" class="ml-2"><i class="material-icons">add</i>Uložit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div><!-- /.card-body -->
+</div>
+
+
+

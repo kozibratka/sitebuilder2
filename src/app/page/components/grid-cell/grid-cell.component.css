@@ -1,0 +1,83 @@
+:host:not(.resized) > .cell-content:hover, ::ng-deep .sortable-js-dragged .cell-content{
+  outline:  dotted 1px transparent;
+  transition: outline 0.3s linear,box-shadow 0.3s linear;
+  outline-color: #007BFF;
+  box-shadow: 0 0 0 1px white;
+
+
+  /*!* inner indicator *!*/
+  /*outline: 2px #F9F9F9 solid;*/
+  /*outline-offset: 0;*/
+  /*!* outer indicator *!*/
+  /*box-shadow: 0 0 0 4px #193146;*/
+}
+
+.cell-content {
+  width: 100%;
+  height: 100%;
+}
+
+.cell-delimiter {
+  position: absolute;
+  width: 12px;
+  right: -6px;
+  height: 100%;
+  cursor: col-resize;
+  z-index: 1;
+  top: 0px;
+  margin-top: 8px;
+}
+
+.add-cell-icon-left {
+  cursor: pointer;
+  color: green;
+  border-radius: 50%;
+  background: white;
+}
+
+.add-cell-icon-right {
+  cursor: pointer;
+  color: green;
+  border-radius: 50%;
+  background: white;
+}
+
+.del-cell-icon-left {
+  cursor: pointer;
+  color: red;
+  border-radius: 50%;
+  background: white;
+}
+
+.del-cell-icon-right {
+  cursor: pointer;
+  color: red;
+  border-radius: 50%;
+  background: white;
+}
+
+.left-add-del-cell {
+  position: absolute;
+  top: 40%;
+  left: -9px;
+  width: 17px;
+  z-index: 3;
+}
+
+.right-add-del-cell {
+  position: absolute;
+  top: 40%;
+  right: -9px;
+  width: 17px;
+}
+
+.add-del-cell-container {
+  width: 20px;
+}
+
+.add-del-cell-container mat-icon {
+  height: 17px;
+  width: 17px;
+  border-radius: 49%;
+  font-size: 17px;
+}

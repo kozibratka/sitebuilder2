@@ -1,0 +1,8 @@
+.menu-container{
+  max-width: 290px;
+}
+
+.menu-num-container:hover {
+  background: lightgrey;
+  cursor: pointer;
+}

@@ -1,0 +1,7 @@
+<ng-container *ngIf="isImage() else iconBLock">
+  <img [style.max-width]="'100%'" [style.height.px]="height" src="{{path}}">
+</ng-container>
+
+<ng-template #iconBLock>
+  <i class="fa-3 {{getFileExtension(fileExtension)}}" style="color:#EAC452;" aria-hidden="true"></i>
+</ng-template>

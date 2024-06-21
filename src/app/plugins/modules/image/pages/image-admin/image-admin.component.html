@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="adminForm">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="border border-inner">
+            <app-image-input [miniature]="true" [path]="settings.imagePath" (imagePath)="updateImage($event)"></app-image-input>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

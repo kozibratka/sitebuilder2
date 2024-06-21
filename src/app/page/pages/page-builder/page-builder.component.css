@@ -1,0 +1,57 @@
+.save-builder{
+  /*float: right;*/
+}
+
+.preview-builder{
+  /*float: right;*/
+}
+
+.global-plugin-selector {
+  border-bottom: 1px solid black;
+}
+
+.add-global-plugin {
+  position: absolute;
+  float: right;
+  bottom: 5px;
+  right: 5px;
+  line-height: 20px;
+}
+
+::ng-deep .grid-stack > .grid-stack-item > .ui-resizable-se {
+  filter: invert(12%) sepia(86%) saturate(6645%) hue-rotate(1deg) brightness(89%) contrast(104%) !important;
+}
+
+::ng-deep .grid-stack-placeholder {
+  background-color: #f2f2f2;
+  outline-width: 1px;
+  outline-color: #007BFF;
+}
+
+::ng-deep .grid-item-dragged .grid-stack-item {
+  outline-width: 1px;
+  outline-color: #007BFF;
+}
+
+:host {
+  display: block;
+}
+
+.menu-unlocked {
+  position: absolute;
+  width: 279px;
+  z-index: 1;
+}
+
+::ng-deep .cdk-overlay-container:has(.file-manager-dialog) {
+  z-index: 2003 !important;
+}
+
+.left-menu {
+  z-index: 1;
+}
+
+.link-back-list-pages {
+  position: absolute;
+  left: 12px;
+}

@@ -1,0 +1,25 @@
+<div class="row position-relative">
+  <div class="col-md-12 text-end">
+    <a class="link-back-list-pages" [routerLink]="['../../list']"><<< Zpět na seznam stránek</a>
+    <button class="preview-builder" (click)="preview()" mat-raised-button color="primary"><mat-icon>preview</mat-icon>Náhled
+    </button>
+    <button class="save-builder ms-1" (click)="save()" mat-raised-button color="primary"><mat-icon>save</mat-icon>Uložit
+    </button>
+    <button class="public-builder ms-1" (click)="save(true)" mat-raised-button color="primary"><mat-icon>public</mat-icon>Publikovat
+    </button>
+  </div>
+</div>
+<div class="row" [class.grid-item-dragged]="gridDragged$ | async">
+  <div class="left-menu" [class]="menuLocked ? 'col-md-2' : 'menu-unlocked'" [@visibleMenu]="getMenuState()" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    <app-menu-builder (dragMenuBlock$)="menuBlockDragged=$event" [pageDetail]="pageDetail" (locketEmitter)="menuLocked = $event"></app-menu-builder>
+  </div>
+  <div [class]="menuLocked ? 'col-md-10' : 'col-md-12'" class="builder" >
+    <app-palette-builder [pageDetail]="pageDetail" [menuBlocDragged]="menuBlockDragged"></app-palette-builder>
+  </div>
+<!--  {{namePlugin}}-->
+</div>
+
+
+
+
+

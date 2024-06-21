@@ -1,0 +1,18 @@
+.menu-item {
+  padding: 5px 0.25rem;;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+.item-line {
+  top: 3px;
+  position: relative;
+}
+
+.handle {
+  cursor: move;
+}
+
+.empty-item {
+  padding: 5px 0;
+}

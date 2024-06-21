@@ -1,0 +1,12 @@
+<div class="video-container" [style.height.px]="settings.height">
+  <iframe *ngIf="settings.videoPath;else other_content" class="frame" scrolling="no"
+          [style]="(dragStatusService && dragStatusService.isDraggedResizedPlugin()) ? 'overflow: hidden !important;pointer-events: none !important;' : ''"
+          [src]="getVideoUrl()">
+  </iframe>
+  <ng-template #other_content>
+    <div class="video-icon-container inset-0">
+      <mat-icon class="video-icon">play_circle</mat-icon>
+    </div>
+  </ng-template>
+</div>
+

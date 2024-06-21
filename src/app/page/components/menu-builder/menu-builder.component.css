@@ -1,0 +1,114 @@
+.menu-block{
+  list-style-type: none;
+  position: relative;
+}
+
+.menu-block  img{
+  width: 30%;
+  margin-bottom: 5px;
+}
+
+.menu-block, .menu-element{
+  padding: 10px;
+}
+
+.menu-element-item:not(.ui-draggable-dragging){
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.menu-element-cells:not(.ui-draggable-dragging){
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.menu-element-item img{
+  width: 30%;
+}
+
+.menu-element-block:not(.ui-draggable-dragging){
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.menu-element-block img{
+  width: 100%;
+}
+
+.grid-stack-item-menu {
+  position: relative;
+}
+
+i.icon-move, i.icon-move-grid{
+  position: absolute;
+  top: 10px;
+  color: black;
+  /*display: none;*/
+  left: 11px;
+  cursor: move;
+  font-size: 17px;
+}
+
+.grid-row-menu {
+  position: relative;
+}
+
+.lock {
+  position: absolute;
+  right: 0px;
+  top: 59px;
+  background-color: #fff;
+  padding: 0px;
+  cursor: pointer;
+  z-index: 1
+}
+
+.grid-row-menu {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.menu-plugin-container {
+  position: relative;
+  width: 100%;
+}
+
+:host {
+  position: fixed;
+  width: 16%;
+}
+
+i.icon-move-block, i.icon-delete{
+  position: absolute;
+  top: 15px;
+  color: black;
+  /*display: none;*/
+  left: 11px;
+  cursor: move;
+  font-size: 17px;
+}
+
+i.icon-delete {
+  left: 40px;
+  cursor: pointer;
+}
+
+::ng-deep .menu-element-block .empty-block-template {
+  border: 1px solid black;
+  height: 122px;
+  width: 100%;
+}
+
+/*mat-icon {*/
+/*  color: white;*/
+/*  mix-blend-mode: difference;*/
+/*}*/

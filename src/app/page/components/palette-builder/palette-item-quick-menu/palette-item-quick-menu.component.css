@@ -1,0 +1,32 @@
+:host {
+  transition: all 0.5s;
+  z-index: 1;
+  position: absolute;
+  display: none;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.btn-app {
+  border-radius: 3px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  color: #6c757d;
+  font-size: 12px;
+  height: 37px;
+  margin: 0 0 0 0;
+  min-width: 42px;
+  padding: 4px 0px;
+  text-align: center;
+}
+
+
+:host > .edit-buttons > i {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  :host {
+    display: none !important;
+  }
+}

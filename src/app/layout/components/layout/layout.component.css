@@ -1,0 +1,53 @@
+.user-menu>a {
+  position: relative;
+  display: block;
+  padding: 7px 15px;
+}
+
+.user-menu>.dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+}
+
+.progres-line {
+  z-index: 9999;
+  position: fixed;
+}
+
+.content-header {
+  padding: 5px 0.5rem
+}
+
+:host ::ng-deep .mat-form-field-infix {
+  border-top: .0em solid black !important;
+}
+
+:host ::ng-deep .cdk-overlay-pane {
+  z-index: 2000 !important;
+}
+
+.hide-menu {
+  visibility: hidden;
+}
+
+::ng-deep body:not(.sidebar-collapse):has(.hide-menu) {
+  margin-left: -250px!important;
+}
+
+.navbar-head {
+  width: 100%;
+}
+
+.user-menu {
+  padding: 7px;
+}
+
+::ng-deep a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+::ng-deep app-palette-builder a {
+  text-decoration: underline;
+}
