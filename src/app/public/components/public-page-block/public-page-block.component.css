@@ -1,0 +1,24 @@
+.block-content {
+  margin: 0 10px;
+}
+
+.block{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.video-container {
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  width: 100%;
+}
+
+.block-content-rows.container {
+  max-width: 100%;
+}
+
+.block-content-rows.container > .row {
+  position: relative;
+}

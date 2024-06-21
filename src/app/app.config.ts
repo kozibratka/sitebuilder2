@@ -21,3 +21,14 @@ export const appConfig: ApplicationConfig = {
     PluginsProvider, provideAnimationsAsync(), provideAnimationsAsync()
   ]
 };
+
+export const appConfigPublic: ApplicationConfig = {
+  providers: [
+    provideRouter(routes),
+    provideHttpClient(),
+    provideToastr(),
+    provideAnimations(),
+    PluginsProvider, provideAnimationsAsync(), provideAnimationsAsync()
+  ]
+};
+

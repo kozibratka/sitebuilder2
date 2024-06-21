@@ -12,7 +12,7 @@ import {
   AnimationHiderComponent
 } from "../../../core/components/hidder/animation-hider/animation-hider/animation-hider.component";
 import {MatIcon} from "@angular/material/icon";
-import {MatMenu, MatMenuTrigger} from "@angular/material/menu";
+import {MatMenu, MatMenuContent, MatMenuTrigger} from "@angular/material/menu";
 import {CommonModule} from "@angular/common";
 
 @Component({
@@ -26,7 +26,8 @@ import {CommonModule} from "@angular/common";
     AnimationHiderComponent,
     MatIcon,
     MatMenu,
-    MatMenuTrigger
+    MatMenuTrigger,
+    MatMenuContent
   ],
   styleUrls: ['./grid-cell.component.css']
 })

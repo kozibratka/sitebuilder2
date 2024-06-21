@@ -8,7 +8,8 @@
     ]
   },
   "files": [
-    "src/admin-main.ts"
+    "src/admin-main.ts",
+    "src/public-main.ts"
   ],
   "include": [
     "src/**/*.d.ts"
