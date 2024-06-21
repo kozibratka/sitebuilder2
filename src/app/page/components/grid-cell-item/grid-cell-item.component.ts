@@ -29,8 +29,6 @@ import {
   AnimationHiderComponent
 } from "../../../core/components/hidder/animation-hider/animation-hider/animation-hider.component";
 import {CommonModule} from "@angular/common";
-import {ImageModule} from "../../../plugins/modules/image/image.module";
-import {GridCellComponent} from "../grid-cell/grid-cell.component";
 
 @Component({
   selector: 'app-grid-cell-item',

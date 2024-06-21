@@ -25,6 +25,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@popperjs/core": "^2.11.8",
+    "@tinymce/tinymce-angular": "^8.0.0",
     "@types/jquery": "^3.5.30",
     "@types/jqueryui": "^1.12.22",
     "angular-mixed-cdk-drag-drop": "^2.2.3",

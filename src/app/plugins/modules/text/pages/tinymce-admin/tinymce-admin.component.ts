@@ -6,13 +6,20 @@ import {FileManagerModalService} from "../../../../../core/modules/file-manager/
 import {FormService} from "../../../../../core/services/form.service";
 import {PageListResolverService} from "../../../../../page/services/page-list-resolver.service";
 import {PageInterface} from "../../../../../page/interfaces/page-interface";
+import {EditorComponent, TINYMCE_SCRIPT_SRC} from "@tinymce/tinymce-angular";
+import {CommonModule} from "@angular/common";
 
 @Component({
   selector: 'app-tinymce-admin',
   standalone: true,
   templateUrl: './tinymce-admin.component.html',
   imports: [
-    ReactiveFormsModule
+    CommonModule,
+    ReactiveFormsModule,
+    EditorComponent
+  ],
+  providers: [
+    { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }
   ],
   styleUrls: ['./tinymce-admin.component.css']
 })
