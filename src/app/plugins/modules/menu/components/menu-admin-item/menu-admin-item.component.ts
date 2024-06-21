@@ -25,7 +25,6 @@ export class MenuAdminItemComponent {
   @Input() options: SortableOptions;
   @Output() updated = new EventEmitter<boolean>();
 
-
   constructor(
     private menuAdminComponent: MenuAdminComponent,
     private dialog: MatDialog
