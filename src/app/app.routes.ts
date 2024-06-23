@@ -4,6 +4,8 @@ import {WebListResolverGuard} from "./web/services/web-list-resolver.service";
 import {WebDetailResolverService} from "./web/services/web-detail-resolver.service";
 import {UserResolver} from "./authorization/resolvers/user.resolver";
 import {CompAComponent} from "./Test/comp-a/comp-a.component";
+import {PublicComponent} from "./public/pages/public/public.component";
+import {PageResolver} from "./public/services/page.resolver";
 
 export const routes: Routes = [
   {
@@ -56,3 +58,11 @@ export const routes: Routes = [
   //   loadChildren: () => import('./authorization/authorization.module').then(m => m.AuthorizationModule)
   // }
 ];
+
+export const publicRoutes: Routes = [
+  {
+    path: '**',
+    component: PublicComponent,
+    resolve: {pageDetail: PageResolver},
+  }
+]

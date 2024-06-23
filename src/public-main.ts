@@ -2,7 +2,7 @@
 
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfigPublic } from './app/app.config';
-import {PublicComponent} from "./app/public/pages/public/public.component";
+import {AppPublicComponent} from "./app/public/app-public.component";
 
-bootstrapApplication(PublicComponent, appConfigPublic)
+bootstrapApplication(AppPublicComponent, appConfigPublic)
   .catch((err) => console.error(err));

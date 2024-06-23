@@ -1,13 +1,12 @@
 import {ApplicationConfig, importProvidersFrom} from '@angular/core';
 import { provideRouter } from '@angular/router';
 
-import { routes } from './app.routes';
+import { routes, publicRoutes } from './app.routes';
 import {provideHttpClient} from "@angular/common/http";
 import {provideToastr} from "ngx-toastr";
 import { SortablejsModule } from 'nxt-sortablejs';
 import {provideAnimations} from "@angular/platform-browser/animations";
 import {PluginsProvider} from "./plugins/modules/PluginProvider";
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {DragToSelectModule} from "ngx-drag-to-select";
 
 export const appConfig: ApplicationConfig = {
@@ -18,17 +17,17 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     importProvidersFrom(SortablejsModule.forRoot({ animation: 150 })),
     importProvidersFrom(DragToSelectModule.forRoot()),
-    PluginsProvider, provideAnimationsAsync(), provideAnimationsAsync()
+    PluginsProvider,
   ]
 };
 
 export const appConfigPublic: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(publicRoutes),
     provideHttpClient(),
     provideToastr(),
     provideAnimations(),
-    PluginsProvider, provideAnimationsAsync(), provideAnimationsAsync()
+    PluginsProvider,
   ]
 };
 
