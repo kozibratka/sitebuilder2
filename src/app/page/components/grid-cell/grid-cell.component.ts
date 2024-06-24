@@ -14,6 +14,7 @@ import {
 import {MatIcon} from "@angular/material/icon";
 import {MatMenu, MatMenuContent, MatMenuTrigger} from "@angular/material/menu";
 import {CommonModule} from "@angular/common";
+import {GridRowComponent} from "../grid-row/grid-row.component";
 
 @Component({
   selector: 'app-grid-cell',
@@ -46,6 +47,7 @@ export class GridCellComponent implements OnInit{
   constructor(
     public gridCellService: GridCellService,
     private dragStatusService: DragStatusService,
+    public gridRowComponent:GridRowComponent,
   ) {
   }
 

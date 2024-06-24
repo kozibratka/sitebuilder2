@@ -34,7 +34,7 @@
 
 <mat-menu #menu="matMenu">
   <ng-template matMenuContent let-rightPanel="rightPanel" let-isDeepChild="isDeepChild">
-    <div class="container">
+    <div class="container" (mouseenter)="gridRowComponent.isMouseEnter = true" (mouseleave)="gridRowComponent.isMouseEnter = false">
       <h6>Jakou buňku smazat?</h6>
       <div class="d-flex flex-wrap menu-container">
         <button type="button" class="btn btn-light" (click)="removeCell$.emit({site: 'left', isRightPanel: rightPanel, isDeepChild})">Vlevo</button>
