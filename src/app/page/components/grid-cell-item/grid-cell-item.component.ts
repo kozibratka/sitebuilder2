@@ -115,7 +115,7 @@ export class GridCellItemComponent implements OnInit, OnChanges{
       [
         {label: 'Vybrat prvek', component: AdminPluginSelectComponent, path: ''},
         ...pluginResolver.adminComponentsClass,
-        {label: 'Rozměry', component: PluginDimensionAdminComponent, path: ''}
+        {label: 'Odsazení', component: PluginDimensionAdminComponent, path: ''}
       ];
     let dialogInfo = this.moveableModalService.show<any>(MiniAdminComponent,
       {

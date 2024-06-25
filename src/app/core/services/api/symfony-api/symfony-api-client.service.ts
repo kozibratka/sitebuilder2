@@ -37,10 +37,10 @@ export class SymfonyApiClientService {
   }
 
   get<T = {}>(routeName: string, querySegmentParam?: {}, headersOptions: { [header: string]: string } = {}): Observable<HttpResponse<T>> {
-    this.emitPreSend('get');
     const routesFromBackend$ = this.tryGetRoutes();
     return routesFromBackend$.pipe(
       switchMap(routes => {
+        this.emitPreSend('get');
         Routing.setRoutingData(routes);
         const path = Routing.generate(routeName, querySegmentParam);
         // if (querySegmentParam) {

@@ -60,12 +60,13 @@ export class ButtonResolverService extends AbstractPluginResolver<ButtonConfigIn
     return {
       identifier: PluginIdentifier.BUTTON_V1,
       externalUrl: null,
-      pageUrl: null,
+      fileUrl: null,
       label: 'Tlačítko',
       pageId: null,
       linkType: null,
       position: 'center',
       type: 'btn-primary',
+      targetBlank: true,
     };
   }
 }
