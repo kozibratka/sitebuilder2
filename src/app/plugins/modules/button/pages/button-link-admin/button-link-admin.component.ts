@@ -64,7 +64,7 @@ export class ButtonLinkAdminComponent extends AbstractAdminSetting<ButtonConfigI
   }
 
   openFileManager() {
-    this.fileManagerModalService.open('image').subscribe(value => {
+    this.fileManagerModalService.open().subscribe(value => {
       if (value.eventName === 'selected') {
         this.settings.fileUrl = value.files[0]?.publicPath;
       }
