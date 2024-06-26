@@ -5,6 +5,7 @@ export interface ButtonConfigInterface extends BasePlugConfigInterface {
   externalUrl?: string;
   fileUrl?: string;
   pageId?: number;
+  pageUrl?: string;
   linkType?: number;
   type?: string;
   position: string;

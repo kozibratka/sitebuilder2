@@ -52,6 +52,7 @@ export class ButtonLinkAdminComponent extends AbstractAdminSetting<ButtonConfigI
         if (value.linkType === 1) {
           settings.externalUrl = null;
           settings.fileUrl = null;
+          settings.pageUrl = this.pageListResolverService.getPageDetail(settings.pageId).url;
         } else if (value.linkType === 2) {
           settings.pageId = null;
           settings.fileUrl = null;

@@ -94,7 +94,9 @@ export class PageCreateComponent implements OnInit {
 
   refreshUrlInput(event: Event) {
     const pageName = (event.target as HTMLInputElement).value;
-    this.createPageForm.patchValue({url: pageName.replaceAll(' ', '-').toLowerCase()}, {emitEvent: false});
+    let url = pageName.replaceAll(' ', '-').toLowerCase();
+    url = url.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    this.createPageForm.patchValue({url: url}, {emitEvent: false});
   }
 
 }

@@ -4,14 +4,13 @@ import {PageCreateComponent} from "./pages/page-create/page-create.component";
 import {PageDetailResolverService} from "./services/page-detail-resolver.service";
 import {PageBuilderComponent} from "./pages/page-builder/page-builder.component";
 import {PageBuilderResolverService} from "./services/page-builder-resolver.service";
+import {PageListResolverService} from "./services/page-list-resolver.service";
 
 export default   [
   {
     path: 'list',
     component: PageListComponent,
-    // resolve: {pageList: PageListResolverService},
-    resolve: {pageList: GenericResolver},
-    data: {resolverConfig: {data: {route: 'page_list'}, queryDataMap: {webId: 'id'}}},
+    resolve: {pageList: PageListResolverService},
     // runGuardsAndResolvers: 'always',
   },
   {

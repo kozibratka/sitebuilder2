@@ -1,3 +1,10 @@
 <div [style.text-align]="settings.position">
-  <button type="button" class="btn {{settings.type}}">{{settings.label}}</button>
+  <a
+    appLinkDeactivate
+    [attr.target]="settings.targetBlank ? 'blank' : ''"
+    href="/{{settings.fileUrl ?? settings.externalUrl ?? settings.pageUrl }}">
+    <button type="button" class="btn {{settings.type}}">
+      {{settings.label}}
+    </button>
+  </a>
 </div>
