@@ -3,7 +3,7 @@ import {PaletteBuilderComponent} from '../palette-builder.component';
 import {PageBuilderComponent} from '../../../pages/page-builder/page-builder.component';
 import {ElementHelper} from '../../../../core/helpers/element-helper';
 import {MoveableModalService} from '../../../../core/components/moveable-modal/services/moveable-modal.service';
-import {PluginResolverService} from '../../../../plugins/services/plugin-resolver.service';
+import {PluginResolverService} from '../../../../plugins/shared/services/plugin-resolver.service';
 import {QuickMenuService} from '../../../services/quick-menu.service';
 import {GridCellItemComponent} from "../../grid-cell-item/grid-cell-item.component";
 

@@ -6,7 +6,7 @@ import {
 } from '@angular/router';
 import {Observable, throwError} from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
-import {BasePlugConfigInterface} from "../../plugins/interfaces/base-plug-config-interface";
+import {BasePlugConfigInterface} from "../../plugins/shared/interfaces/base-plug-config-interface";
 import {SymfonyApiClientService} from "../../core/services/api/symfony-api/symfony-api-client.service";
 import {HttpResponseToasterService} from "../../core/services/http-response-toaster.service";
 import {WebDetailResolverService} from "../../web/services/web-detail-resolver.service";

@@ -18,7 +18,7 @@ import {NotifierService} from '../../../core/services/notifier.service';
 import {SystemInfoService} from '../../../core/services/system-info.service';
 import {Title} from '@angular/platform-browser';
 import {Subject, Subscription, timer} from 'rxjs';
-import {BasePlugConfigInterface} from '../../../plugins/interfaces/base-plug-config-interface';
+import {BasePlugConfigInterface} from '../../../plugins/shared/interfaces/base-plug-config-interface';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {UserService} from "../../../authorization/services/user.service";
 import {MenuBuilderComponent} from "../../components/menu-builder/menu-builder.component";

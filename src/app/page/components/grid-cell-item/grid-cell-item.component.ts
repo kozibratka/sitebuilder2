@@ -15,15 +15,15 @@ import {
 } from '@angular/core';
 import {GridCellItemInterface} from "../../interfaces/grid-cell-item-interface";
 import {AbstractPluginResolver} from "../../services/abstract-classes/abstract-plugin-resolver";
-import {AbstractPlugin} from "../../../plugins/abstract-class/abstract-plugin";
-import {PluginResolverService} from "../../../plugins/services/plugin-resolver.service";
+import {AbstractPlugin} from "../../../plugins/shared/abstract-class/abstract-plugin";
+import {PluginResolverService} from "../../../plugins/shared/services/plugin-resolver.service";
 import {PageBuilderComponent} from "../../pages/page-builder/page-builder.component";
 import {MoveableModalService} from "../../../core/components/moveable-modal/services/moveable-modal.service";
-import {AdminPluginSelectComponent} from "../../../plugins/components/plugin-select/admin-plugin-select.component";
+import {AdminPluginSelectComponent} from "../../../plugins/shared/components/plugin-select/admin-plugin-select.component";
 import {MiniAdminComponent} from "../../../core/components/mini-admin/mini-admin.component";
 import {
   PluginDimensionAdminComponent
-} from "../../../plugins/components/plugin-dimension-admin/plugin-dimension-admin.component";
+} from "../../../plugins/shared/components/plugin-dimension-admin/plugin-dimension-admin.component";
 import {GridRowComponent} from "../grid-row/grid-row.component";
 import {
   AnimationHiderComponent

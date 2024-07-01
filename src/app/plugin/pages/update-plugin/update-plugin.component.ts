@@ -9,8 +9,8 @@ import {HttpResponseToasterService} from '../../../core/services/http-response-t
 import {SymfonyApiClientService} from '../../../core/services/api/symfony-api/symfony-api-client.service';
 import {AbstractPluginResolver} from '../../../page/services/abstract-classes/abstract-plugin-resolver';
 import {NotifierService} from '../../../core/services/notifier.service';
-import {BasePlugConfigInterface} from '../../../plugins/interfaces/base-plug-config-interface';
-import {PluginResolverService} from '../../../plugins/services/plugin-resolver.service';
+import {BasePlugConfigInterface} from '../../../plugins/shared/interfaces/base-plug-config-interface';
+import {PluginResolverService} from '../../../plugins/shared/services/plugin-resolver.service';
 import {AdminAbleInterface} from "../../../core/components/mini-admin/tools/interfaces/admin-able-interface";
 import {SettingAbleInterface} from "../../../core/components/mini-admin/tools/interfaces/setting-able-interface";
 import {MiniAdminComponent} from "../../../core/components/mini-admin/mini-admin.component";

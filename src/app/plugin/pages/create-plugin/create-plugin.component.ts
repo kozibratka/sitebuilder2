@@ -11,8 +11,8 @@ import {HttpResponseToasterService} from '../../../core/services/http-response-t
 import {AbstractPluginResolver} from '../../../page/services/abstract-classes/abstract-plugin-resolver';
 import {MiniAdminComponent} from '../../../core/components/mini-admin/mini-admin.component';
 import {NotifierService} from '../../../core/services/notifier.service';
-import {PluginResolverService} from '../../../plugins/services/plugin-resolver.service';
-import {BasePlugConfigInterface} from '../../../plugins/interfaces/base-plug-config-interface';
+import {PluginResolverService} from '../../../plugins/shared/services/plugin-resolver.service';
+import {BasePlugConfigInterface} from '../../../plugins/shared/interfaces/base-plug-config-interface';
 import {ApiFormService} from "../../../core/services/form/api-form.service";
 import {InputFormErrorDirective} from "../../../core/directives/form-error/input-form-error/input-form-error.directive";
 import {GlobalFormErrorComponent} from "../../../core/components/global-form-error/global-form-error.component";

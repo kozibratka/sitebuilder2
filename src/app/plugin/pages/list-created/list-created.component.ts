@@ -7,7 +7,7 @@ import {SymfonyApiClientService} from '../../../core/services/api/symfony-api/sy
 import {AbstractPluginResolver} from '../../../page/services/abstract-classes/abstract-plugin-resolver';
 import {RemoveDialogComponent} from '../../components/remove-dialog/remove-dialog.component';
 import {NotifierService} from '../../../core/services/notifier.service';
-import {BasePlugConfigInterface} from '../../../plugins/interfaces/base-plug-config-interface';
+import {BasePlugConfigInterface} from '../../../plugins/shared/interfaces/base-plug-config-interface';
 import {
   MatCell,
   MatColumnDef,

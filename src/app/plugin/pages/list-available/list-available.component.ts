@@ -2,7 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import {ActivatedRoute, RouterLink} from '@angular/router';
 import * as _ from 'lodash';
 import {AbstractPluginResolver} from '../../../page/services/abstract-classes/abstract-plugin-resolver';
-import {BasePlugConfigInterface} from '../../../plugins/interfaces/base-plug-config-interface';
+import {BasePlugConfigInterface} from '../../../plugins/shared/interfaces/base-plug-config-interface';
 import {CommonModule} from "@angular/common";
 import {
   MatCell,
