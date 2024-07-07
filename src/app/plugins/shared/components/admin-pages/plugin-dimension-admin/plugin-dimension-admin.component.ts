@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {AbstractAdminSetting} from "../../abstract-class/abstract-admin-setting";
-import {BasePlugConfigInterface} from "../../interfaces/base-plug-config-interface";
-import {FormService} from "../../../../core/services/form.service";
+import {AbstractAdminSetting} from "../../../abstract-class/abstract-admin-setting";
+import {BasePlugConfigInterface} from "../../../interfaces/base-plug-config-interface";
+import {FormService} from "../../../../../core/services/form.service";
 import {ReactiveFormsModule} from "@angular/forms";
 
 @Component({

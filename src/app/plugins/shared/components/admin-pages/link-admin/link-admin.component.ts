@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {AbstractAdminSetting} from "../../abstract-class/abstract-admin-setting";
-import {BasePlugConfigInterface} from "../../interfaces/base-plug-config-interface";
-import {FormService} from "../../../../core/services/form.service";
-import {LinkAblePluginInterface} from "../../interfaces/link-able-plugin-interface";
-import {PageListResolverService} from "../../../../page/services/page-list-resolver.service";
-import {FileManagerModalService} from "../../../../core/modules/file-manager/services/file-manager-modal.service";
-import {ButtonConfigInterface} from "../../../button/interfaces/button-config-interface";
+import {AbstractAdminSetting} from "../../../abstract-class/abstract-admin-setting";
+import {BasePlugConfigInterface} from "../../../interfaces/base-plug-config-interface";
+import {FormService} from "../../../../../core/services/form.service";
+import {LinkAblePluginInterface} from "../../../interfaces/link-able-plugin-interface";
+import {PageListResolverService} from "../../../../../page/services/page-list-resolver.service";
+import {FileManagerModalService} from "../../../../../core/modules/file-manager/services/file-manager-modal.service";
+import {ButtonConfigInterface} from "../../../../button/interfaces/button-config-interface";
 import {CommonModule, NgSwitch} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatButton} from "@angular/material/button";

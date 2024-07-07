@@ -7,7 +7,7 @@ import {Subject} from "rxjs";
 import {debounceTime} from "rxjs/operators";
 import {
   ImageInputComponent
-} from "../../../../../core/modules/file-manager/components/image-input/image-input.component";
+} from "../../../../../plugins/shared/components/inputs/image-inputs/image-input/image-input.component";
 import {FormsModule} from "@angular/forms";
 
 @Component({

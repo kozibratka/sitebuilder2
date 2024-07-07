@@ -7,7 +7,7 @@ import {FormService} from "../../../../core/services/form.service";
 import {ReactiveFormsModule} from "@angular/forms";
 import {
   ImageInputComponent
-} from "../../../../core/modules/file-manager/components/image-input/image-input.component";
+} from "../../../shared/components/inputs/image-inputs/image-input/image-input.component";
 
 @Component({
   selector: 'app-image-v1-admin',

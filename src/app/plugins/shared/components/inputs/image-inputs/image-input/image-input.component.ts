@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {FileManagerModalService} from "../../services/file-manager-modal.service";
+import {FileManagerModalService} from "../../../../../../core/modules/file-manager/services/file-manager-modal.service";
 import {MatDialog} from "@angular/material/dialog";
-import {PixabayComponent} from "../pixabay/pixabay.component";
-import {FileManagerService} from "../../services/file-manager.service";
+import {PixabayComponent} from "../../../pixabay/pixabay.component";
+import {FileManagerService} from "../../../../../../core/modules/file-manager/services/file-manager.service";
 import {CommonModule} from "@angular/common";
 
 @Component({

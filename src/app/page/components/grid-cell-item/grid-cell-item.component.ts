@@ -23,7 +23,7 @@ import {AdminPluginSelectComponent} from "../../../plugins/shared/components/plu
 import {MiniAdminComponent} from "../../../core/components/mini-admin/mini-admin.component";
 import {
   PluginDimensionAdminComponent
-} from "../../../plugins/shared/components/plugin-dimension-admin/plugin-dimension-admin.component";
+} from "../../../plugins/shared/components/admin-pages/plugin-dimension-admin/plugin-dimension-admin.component";
 import {GridRowComponent} from "../grid-row/grid-row.component";
 import {
   AnimationHiderComponent

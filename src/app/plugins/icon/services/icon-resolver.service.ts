@@ -56,9 +56,9 @@ export class IconResolverService extends AbstractPluginResolver<IconConfigInterf
   getEmptySettings(): IconConfigInterface {
     return {
       identifier: PluginIdentifier.ICON_V1,
-      icon: '',
+      icon: 'coffee',
       position: 'center',
-      size: "5x",
+      size: "2x",
     };
   }
 }

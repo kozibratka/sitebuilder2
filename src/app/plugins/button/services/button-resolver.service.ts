@@ -4,7 +4,7 @@ import {PluginIdentifier} from '../../shared/constants/plugin-identifier';
 import {ButtonConfigInterface} from "../interfaces/button-config-interface";
 import {ButtonAdminComponent} from "../pages/button-admin/button-admin.component";
 import {ButtonComponent} from "../components/button/button.component";
-import {LinkAdminComponent} from "../../shared/components/link-admin/link-admin.component";
+import {LinkAdminComponent} from "../../shared/components/admin-pages/link-admin/link-admin.component";
 
 @Injectable({
   providedIn: 'root'

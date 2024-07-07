@@ -8,6 +8,7 @@ import {
   InputFormErrorDirective
 } from "../../../../core/directives/form-error/input-form-error/input-form-error.directive";
 import {NgForOf} from "@angular/common";
+import {IconInputComponent} from "../../../shared/components/inputs/image-inputs/icon-input/icon-input.component";
 
 @Component({
   selector: 'app-icon-admin',
@@ -16,7 +17,8 @@ import {NgForOf} from "@angular/common";
     FormsModule,
     InputFormErrorDirective,
     NgForOf,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    IconInputComponent
   ],
   templateUrl: './icon-admin.component.html',
   styleUrl: './icon-admin.component.css'
