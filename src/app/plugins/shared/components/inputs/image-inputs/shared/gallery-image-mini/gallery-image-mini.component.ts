@@ -32,10 +32,13 @@ export class GalleryImageMiniComponent implements OnDestroy{
   private term$ = new Subject<string>();
   public search$: Observable<string>;
 
-  ngOnInit(): void {
+  constructor() {
     this.search$ = this.term$.pipe(
-      debounceTime(1000)
+      debounceTime(500)
     );
+  }
+
+  ngOnInit(): void {
   }
 
   get search(): string {
@@ -44,6 +47,7 @@ export class GalleryImageMiniComponent implements OnDestroy{
 
   set search(value: string) {
     this._search = value;
+    console.log(this._search)
     this.term$.next(value);
   }
 

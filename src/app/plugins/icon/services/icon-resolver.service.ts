@@ -4,6 +4,7 @@ import {PluginIdentifier} from '../../shared/constants/plugin-identifier';
 import {IconAdminComponent} from "../pages/icon-admin/icon-admin.component";
 import {IconConfigInterface} from "../interfaces/icon-config-interface";
 import {IconComponent} from "../components/icon/icon.component";
+import {LinkAdminComponent} from "../../shared/components/admin-pages/link-admin/link-admin.component";
 
 
 @Injectable({
@@ -21,6 +22,11 @@ export class IconResolverService extends AbstractPluginResolver<IconConfigInterf
     {
       label: 'Ikonka',
       component: IconAdminComponent,
+      path: ''
+    },
+    {
+      label: 'Odkaz',
+      component: LinkAdminComponent,
       path: ''
     },
   ];
@@ -59,6 +65,11 @@ export class IconResolverService extends AbstractPluginResolver<IconConfigInterf
       icon: 'coffee',
       position: 'center',
       size: "2x",
+      externalUrl: null,
+      fileUrl: null,
+      pageId: null,
+      linkType: null,
+      targetBlank: true,
     };
   }
 }

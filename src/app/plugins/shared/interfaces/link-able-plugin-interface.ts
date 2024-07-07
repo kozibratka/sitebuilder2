@@ -3,4 +3,6 @@ export interface LinkAblePluginInterface {
   pageId?: number;
   pageUrl?: string;
   linkType?: number;
+  externalUrl?: string;
+  targetBlank?: boolean;
 }

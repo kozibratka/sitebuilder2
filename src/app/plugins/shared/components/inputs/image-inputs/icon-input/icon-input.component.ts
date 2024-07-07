@@ -45,6 +45,9 @@ export class IconInputComponent {
       maxHeight: '600px',
     });
     dialog.componentRef.instance.icons = FontAwesomeIcons;
+    dialog.componentRef.instance.search$.subscribe(value => {
+      dialog.componentRef.instance.icons = FontAwesomeIcons.filter(value1 => value1.iconName.includes(value));
+    })
     dialog.beforeClosed().subscribe(icon => {
       if (!icon) {
         return;
